@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login HR Management System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->  
+  <link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+  
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/css/util.css">
+
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<!--===============================================================================================-->
+</head>
+
+<body>
+<div class="container-login100">
+
+    <div class="row clearfix">
+      <div class="col-md-12 table-responsive">
+        <div class="login100-form-avatar">
+            <img src="/static/images/astronera.png" alt="AVATAR">
+          </div><br><br>
+      <form  enctype="multipart/form-data" method="POST" action="edit">
+          {% csrf_token %}
+        <div class="input-group mb-3">
+            
+      <table class="table table-bordered table-hover table-sortable " id="tab_logic">
+        <thead>
+          <tr >
+             <th class="text-center">
+              Sr No
+            </th>
+           
+            <th class="text-center">
+              Title
+            </th>
+            <th class="text-center">
+              Report
+            </th>
+            <th class="text-center">
+              File Upload
+            </th>
+            <th class="text-center">
+              Work Hours
+            </th>
+              
+                
+          </tr>
+        </thead>
+        <tbody>
+            <tr id='addr0' data-id="0" class="hidden">
+            <td>
+              <input type="number" name='sr0' value="{{v2}}" class="form-control" readonly/></td>
+            <td data-name="title" >
+                <input type="text" name='t0' value="{{v1.title}}" placeholder='Title' class="form-control"/>
+            </td>
+             <td data-name="report" >
+                <textarea name="r0" placeholder="Report"  class="form-control">{{v1.dailyreport}}</textarea>
+            </td>
+            <td data-name="fileupload" >
+               <input type="file" name="myfile" value="{{v1.uploadfile}}" class='btn btn-primary glyphicon glyphicon-remove row-remove'>
+             </td> 
+            <td data-name="workhour" >
+                <input type="number" name='w0' placeholder='Work Hours' value="{{v1.workhours}}" class="form-control"/>
+            </td>
+           
+              
+                        <td data-name="submit">
+                            <button  name="submit0" class='btn btn-dark glyphicon glyphicon-remove row-remove'><span aria-hidden="true">Submit</span></button>
+                        </td>
+                      
+
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    
+    </div>
+
+  </body>
+</html>

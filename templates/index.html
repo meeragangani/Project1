@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+
+  {% block title %}Home | {% endblock title %}
+  </head>
+  <body>
+    <center>
+{% block body %}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" >
+  <div  class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1600x500/?stars" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+       <h1><font align="center">{{ v1 }}</font></h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x500/?sky" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" >
+       <h1>{{ v2 }}</h1>
+        
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x500/?moon" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block" >
+       <h1>{{ v3 }}</h1>
+        
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
+</center>
+  </body>
+</html>

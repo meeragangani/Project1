@@ -1,0 +1,41 @@
+.profile{
+	vertical-align:middle;
+	margin-left: 50%;
+	margin-top: 50%
+}
+#caption{
+	
+	font-family: Bangers-Regular;
+    src: url('/static/fonts/Bangers/Bangers-Regular.ttf');
+    align-content: center;
+
+}
+#item{
+	font-family: Bangers-Bold;
+    src: url('/static/fonts/Bangers/Bangers-Bold.ttf');
+    color: DodgerBlue;
+}
+/*.btn {
+  background-color: DodgerBlue; /* Blue background 
+  border: none;Remove borders 
+  color: white; /* White text 
+  padding: 12px 16px; /* Some padding 
+  font-size: 16px; /* Set a font size 
+  cursor: pointer; /* Mouse pointer on hover */
+
+/*}*/
+
+/* Darker background on mouse-over 
+.btn:hover {
+  background-color: RoyalBlue;
+}*/
+.topnav-right {
+  float: right;
+}
+.txt{
+
+	font-family:'Roboto Slab', serif;
+	 color: white;
+}
+
+
